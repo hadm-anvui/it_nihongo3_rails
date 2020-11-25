@@ -40,7 +40,7 @@
 
   <ul>
 <% @book.book_reviews.each do |book_review| %>
-    <li><%= book_review.review %> (<%= book_review.user_id %>)</li>
+    <li><%= book_review.review %> (<%= book_review.user.name %>)</li>
 <% end %>
 </ul>
 
